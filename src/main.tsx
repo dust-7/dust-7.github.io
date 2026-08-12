@@ -1,5 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { HashRouter, Routes, Route } from 'react-router';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -31,7 +32,13 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Home />
+
+      <HashRouter>
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
+      </HashRouter>
+
     </ThemeProvider>
   </StrictMode>,
 );
