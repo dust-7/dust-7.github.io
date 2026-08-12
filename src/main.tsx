@@ -10,6 +10,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 import Home from './features/home/Home.tsx';
+import NotFound from './features/not-found/NotFound.tsx';
 
 const base = createTheme({
   palette: {
@@ -36,6 +37,7 @@ createRoot(document.getElementById('root')!).render(
       <HashRouter>
         <Routes>
           <Route index element={<Home />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </HashRouter>
 
