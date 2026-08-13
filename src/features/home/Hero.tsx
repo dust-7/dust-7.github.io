@@ -69,8 +69,8 @@ export default function Hero() {
 
   return (
     <Box sx={{
-      height: '100vh',
       px: { xs: 1, md: 8 },
+      py: 12,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -80,7 +80,7 @@ export default function Hero() {
         p: { xs: 1, md: 8 },
         width: '100%',
         maxWidth: { xs: 500, md: 800 },
-        backgroundColor: '#111',
+        backgroundColor: '#000',
         border: 2,
         borderColor: 'primary.light',
         boxShadow: '0 0 12px 2px #1b5e20',
