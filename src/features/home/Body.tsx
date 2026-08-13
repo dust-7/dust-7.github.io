@@ -3,6 +3,8 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 
+import Gallery from './projects/Gallery.tsx';
+
 export default function Body() {
   return (
     <Container>
@@ -25,6 +27,13 @@ export default function Body() {
             <li><strong>Databases:</strong> MS SQL, MongoDB</li>
             <li><strong>SaaS:</strong> Workato, Salesforce, NetSuite, GitHub</li>
           </ul>
+        </Box>
+        <Box>
+          <Typography variant='h2' gutterBottom>Mini Projects</Typography>
+          <Typography variant='body1'>
+            A collection of MVPs (minimum viable products) putting skills to practice.
+          </Typography>
+          <Gallery />
         </Box>
       </Stack>
     </Container>
