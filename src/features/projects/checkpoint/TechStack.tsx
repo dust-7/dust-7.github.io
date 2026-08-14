@@ -13,7 +13,7 @@ export default function TechStack() {
         <Box sx={{ width: '50%' }}>
           <Typography variant='h4'>Frontend</Typography>
           <ul>
-            <li>Source code</li>
+            <li><Link href='https://github.com/dust-7/dust-7.github.io/tree/main/src/features/projects/checkpoint' target='_blank'>Source code</Link></li>
             <li>Stack:
               <ul>
                 <li>Vite</li>

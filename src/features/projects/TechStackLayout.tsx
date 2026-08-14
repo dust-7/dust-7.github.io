@@ -20,6 +20,7 @@ export default function TechStackLayout({ children }: { children: ReactNode }) {
           position: 'fixed',
           bottom: { xs: 0, md: 40 },
           width: { xs: '100%', md: 'auto' },
+          height: 50,
           left: { md: '50%' },
           transform: { md: 'translate(-50%, 0)' },
           zIndex: 1200,
