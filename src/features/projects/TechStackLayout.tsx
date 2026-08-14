@@ -11,7 +11,7 @@ export default function TechStackLayout({ children }: { children: ReactNode }) {
   return (
     <>
       {/* spacing to accomodate floating button */}
-      <Box sx={{ pb: { xs: 6, md: 12 } }}></Box>
+      <Box sx={{ pb: { xs: 10, md: 16 } }}></Box>
 
       <Button
         variant='contained'
@@ -34,7 +34,7 @@ export default function TechStackLayout({ children }: { children: ReactNode }) {
         slotProps={{ backdrop: { sx: { backgroundColor: '#000c', backdropFilter: 'blur(4px)' } } }}
         sx={{ zIndex: 1100, overflow: 'auto' }}
       >
-        <Box sx={{ pt: 4, pb: { xs: 6, md: 12 } }}>
+        <Box sx={{ pt: 4, pb: { xs: 10, md: 16 } }}>
           <Container>
             <Typography variant='h2' align='center' sx={{ py: 4 }}>Tech Stack</Typography>
             {children}
