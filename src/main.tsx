@@ -11,6 +11,7 @@ import '@fontsource/roboto/700.css';
 
 import Home from './features/home/Home.tsx';
 import Checkpoint from './features/projects/checkpoint/Checkpoint.tsx';
+import Sorting from './features/projects/sorting/Sorting.tsx';
 import NotFound from './features/not-found/NotFound.tsx';
 
 const base = createTheme({
@@ -27,6 +28,12 @@ const theme = createTheme(base, {
     h2: {
       color: base.palette.primary.main,
     },
+    h3: {
+      fontWeight: 700,
+    },
+    h5: {
+      fontWeight: 600,
+    },
   },
 });
 
@@ -41,6 +48,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="projects">
             <Route index element={<NotFound />} />
             <Route path="checkpoint" element={<Checkpoint />} />
+            <Route path="sorting" element={<Sorting />} />
           </Route>
           <Route path='*' element={<NotFound />} />
         </Routes>
