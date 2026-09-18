@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid';
 
 import ProjectCard from './ProjectCard';
 import checkpointThumbnail from '../../../assets/checkpoint.jpg';
+import sortingThumbnail from '../../../assets/sorting.png';
 
 export default function Gallery() {
   const cards = [
@@ -12,9 +13,10 @@ export default function Gallery() {
       description: 'View traffic conditions around the Singapore checkpoints towards Malaysia.',
     },
     {
-      link: '#',
-      title: 'Coming Soon',
-      description: '',
+      link: '/projects/sorting',
+      image: sortingThumbnail,
+      title: 'Sorting Visualizer',
+      description: 'See how different sorting algorithms work in real time. Made using agentic coding.',
     },
   ];
 
