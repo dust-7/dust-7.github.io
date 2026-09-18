@@ -10,11 +10,11 @@ export default function TechStack() {
   return (
     <TechStackWrapper>
       <Stack spacing={{ xs: 2, md: 8 }} direction={{ xs: 'column', md: 'row' }}>
-        <Box sx={{ width: '50%' }}>
+        <Box sx={{ width: { md: '50%' } }}>
           <Typography variant='h4'>Frontend</Typography>
           <ul>
             <li><Link href='https://github.com/dust-7/dust-7.github.io/tree/main/src/features/projects/checkpoint' target='_blank'>Source code</Link></li>
-            <li>Stack:
+            <li><b>Stack:</b>
               <ul>
                 <li>Vite</li>
                 <li>React</li>
@@ -27,7 +27,7 @@ export default function TechStack() {
           <ul>
             <li><Link href='https://github.com/dust-7/dust-7-api/tree/main/src/checkpoint' target='_blank'>Source code</Link></li>
             <li><Link href='https://dust-7-api.vercel.app/api' target='_blank'>API (Swagger UI)</Link></li>
-            <li>Stack:
+            <li><b>Stack:</b>
               <ul>
                 <li>Nestjs</li>
                 <li>Redis</li>

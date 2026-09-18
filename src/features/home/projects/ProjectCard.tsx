@@ -24,6 +24,8 @@ export default function ProjectCard({ link, image, title, description }: {
           component='img'
           image={image}
           alt={title}
+          height={300}
+          sx={{ objectFit: 'contain' }}
         />
         <CardContent>
           <Typography gutterBottom variant='h5' component='div'>
