@@ -1,6 +1,6 @@
-import { StrictMode } from 'react';
+import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HashRouter, Routes, Route } from 'react-router';
+import { HashRouter, Routes, Route, useLocation } from 'react-router';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -37,12 +37,23 @@ const theme = createTheme(base, {
   },
 });
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
       <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route index element={<Home />} />
           <Route path="projects">

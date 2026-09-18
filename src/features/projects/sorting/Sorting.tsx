@@ -38,7 +38,7 @@ export default function Sorting() {
 
   return (
     <>
-      <title>Sorting | ian</title>
+      <title>Sorting Visualizer | ian</title>
 
       <Container maxWidth='xl'>
         <Typography variant='h3' sx={{ pt: 4, pb: 2 }} gutterBottom>
