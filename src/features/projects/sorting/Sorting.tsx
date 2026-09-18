@@ -11,6 +11,7 @@ import Controls from './Controls.tsx';
 import HistoryTable from './HistoryTable.tsx';
 import Metrics from './Metrics.tsx';
 import SortBars from './SortBars.tsx';
+import TechStack from './TechStack.tsx';
 import { useSorter } from './useSorter.ts';
 
 export default function Sorting() {
@@ -140,6 +141,8 @@ export default function Sorting() {
           </Grid>
         </Grid>
       </Container>
+
+      <TechStack />
     </>
   );
 }
