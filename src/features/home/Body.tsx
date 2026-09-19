@@ -22,10 +22,11 @@ export default function Body() {
           </Typography>
           <ul>
             <li><strong>Languages:</strong> JavaScript, TypeScript, Python, C#, Bash, SQL</li>
-            <li><strong>Frameworks:</strong> React, Vite, Vitest, Next.js, NestJS, Jest, Swagger</li>
+            <li><strong>Frameworks:</strong> React, Vite, Vitest, Node.js, Next.js, NestJS, Jest, Swagger</li>
             <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, Lambda, DynamoDB, SNS, CloudWatch), CI/CD (Jenkins, GitHub Actions)</li>
-            <li><strong>Databases:</strong> MS SQL, MongoDB</li>
+            <li><strong>Databases:</strong> MS SQL, MySQL, MongoDB, DynamoDB, Redis</li>
             <li><strong>SaaS:</strong> Workato, Salesforce, NetSuite, GitHub</li>
+            <li><strong>Agentic Coding:</strong> llama.cpp (inference engine), Pi Coding Agent (agent harness)</li>
           </ul>
         </Box>
         <Box>
