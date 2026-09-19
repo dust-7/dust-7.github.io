@@ -1,6 +1,6 @@
-import { StrictMode, useEffect } from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HashRouter, Routes, Route, useLocation } from 'react-router';
+import { HashRouter, Routes, Route } from 'react-router';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -9,6 +9,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
+import ScrollToTop from './components/ScrollToTop.tsx';
 import Home from './features/home/Home.tsx';
 import Checkpoint from './features/projects/checkpoint/Checkpoint.tsx';
 import Sorting from './features/projects/sorting/Sorting.tsx';
@@ -36,16 +37,6 @@ const theme = createTheme(base, {
     },
   },
 });
-
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
